@@ -1,0 +1,20 @@
+{
+  "name": "custom-playwright-framework",
+  "version": "1.0.0",
+  "description": "Custom Playwright Framework with TypeScript, Allure, and advanced QA features.",
+  "scripts": {
+    "test": "playwright test",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:ci": "playwright test --reporter=allure-playwright",
+    "global:setup": "node ./src/fixtures/global-setup.js"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^24.9.1",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.4.1",
+    "typescript": "^5.5.0"
+  }
+}
